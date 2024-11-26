@@ -1,4 +1,4 @@
-Algoritmo "teste_condicional"
+Algoritmo "ex02_notas"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
@@ -6,22 +6,22 @@ Algoritmo "teste_condicional"
 // Data atual  : 25/11/2024
 Var
 // Seção de Declarações das variáveis 
-   hora : inteiro
+       primeira, segunda, final : real
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
+
+   escreva("Digite a primeira nota:")
+   leia (primeira)
+   escreva("Digite a segunda nota:")
+   leia (segunda)
+
+   final <- (primeira + segunda)
    
-   escreva ("Digite uma hora do dia: ")
-   leia (hora)
-   
-   se hora < 12 entao
-      escreval ("Bom dia!")
-      senao
-           se (hora >=12) e (hora < 18) entao
-              escreval ("Boa tarde")
-       senao
-               escreval ("Boa noite!")
-       fimse
+   escreval("NOTA FINAL =", final)
+
+   se final < 60.00 entao
+      escreva("REPROVADO")
    fimse
-   
+
 Fimalgoritmo

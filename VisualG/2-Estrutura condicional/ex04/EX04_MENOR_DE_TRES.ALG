@@ -1,4 +1,4 @@
-Algoritmo "teste_condicional"
+Algoritmo "ex04_menor_de_tres"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
@@ -6,22 +6,28 @@ Algoritmo "teste_condicional"
 // Data atual  : 25/11/2024
 Var
 // Seção de Declarações das variáveis 
-   hora : inteiro
+   a, b, c, menor : inteiro
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
+
+   escreva("Primeiro valor:")
+   leia (a)
+   escreva("Segundo valor:")
+   leia (b)
+   escreva("Terceiro valor:")
+   leia (c)
    
-   escreva ("Digite uma hora do dia: ")
-   leia (hora)
-   
-   se hora < 12 entao
-      escreval ("Bom dia!")
+   se (a < b) e (a < c) entao
+      menor <- a
       senao
-           se (hora >=12) e (hora < 18) entao
-              escreval ("Boa tarde")
-       senao
-               escreval ("Boa noite!")
-       fimse
+         se (b < c) entao
+            menor <- b
+         senao
+           menor <- c
+      fimse
    fimse
    
+   escreva("MENOR =", menor)
+
 Fimalgoritmo
