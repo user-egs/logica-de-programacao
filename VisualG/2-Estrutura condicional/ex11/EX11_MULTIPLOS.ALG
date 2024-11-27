@@ -1,25 +1,24 @@
-Algoritmo "ex05_operadora"
+Algoritmo "ex11_multiplos"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 25/11/2024
+// Data atual  : 26/11/2024
 Var
 // Seção de Declarações das variáveis 
-   minutos : inteiro
-   pagar : real
+      x, y : inteiro
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc...
+ 
+   escreval("Digite dois numeros inteiros: ")
+   leia (x)
+   leia (y)
 
-  escreva("Digite a quantidade de minutos:")
-  leia (minutos)
-  
-  pagar <- 50.00
-  
-  se minutos > pagar entao
-     pagar <- pagar + 2 * (minutos - 100)
-  fimse
-  escreval("Valor a pagar: R$ ", pagar:6:2)
+   se (x % y = 0) ou (y % x = 0) entao
+      escreval("Sao multiplos")
+      senao
+      escreval("Nao sao multiplos")
+   fimse
 
 Fimalgoritmo

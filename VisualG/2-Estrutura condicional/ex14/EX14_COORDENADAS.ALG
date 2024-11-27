@@ -1,25 +1,27 @@
-Algoritmo "ex05_operadora"
+Algoritmo "ex14_coordenadas"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 25/11/2024
+// Data atual  : 26/11/2024
 Var
 // Seção de Declarações das variáveis 
-   minutos : inteiro
-   pagar : real
+   x, y : real
+   q : inteiro
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc...
+ 
+    escreva("Valor de X:")
+    leia (x)
+    escreva("Valor de Y:")
+    leia (y)
 
-  escreva("Digite a quantidade de minutos:")
-  leia (minutos)
-  
-  pagar <- 50.00
-  
-  se minutos > pagar entao
-     pagar <- pagar + 2 * (minutos - 100)
-  fimse
-  escreval("Valor a pagar: R$ ", pagar:6:2)
+    se entao
+    senao
+    
+    fimse
+
+
 
 Fimalgoritmo
