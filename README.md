@@ -1,5 +1,5 @@
 # logica-de-programacao
-Lógica de Programação
+Lógica de Programação, Prof. Dr. Nelio Alves
 
 Curso Completo de Algoritmos e Lógica de Programação
 educandoweb.com.br
